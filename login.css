@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("Assets/LoginBackground.jpg");
+}
+.container {
+    width: 19%;
+    background-color: #000000ec;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 100px 100px 100px 100px rgba(0, 0, 0, 0.1);
+    position:sticky;
+    top: 0%;
+    transform: translate(181%,80%);
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.input-container {
+    position: relative;
+    width: 15%;
+    margin: 5px 0;
+}
+.input-container .inputText{
+    width: 300px;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid #fffffffd;
+    box-shadow: none;
+    margin: 10px 0px;
+    height: 35px;
+    opacity: 100%;
+    border-radius: 3px;
+    background-color: #616161;
+    
+}
+.input-container .inputText:focus{
+    color: rgb(255, 255, 255);
+}
+.input-container .floating-label {
+    color: rgb(145, 136, 136);
+    position: absolute;
+    pointer-events: none;
+    top: 15px;
+    left: 10px;
+    transition: .45s ease all;
+    font-size: 18px;
+}
+.input-container input:focus ~ .floating-label,
+.input-container input:not(:focus):valid ~ .floating-label{
+    top: -10px;
+    left: 6px;
+    font-size: 15px;
+    opacity: 1000%;
+    color: aliceblue;
+}
+.loginbutton
+{
+    border-radius: 6px;
+    background-color: rgb(219, 216, 216); 
+    color: black; 
+    border: 0px;
+    position:relative;top: 10px;
+    height: 25px;
+    cursor: pointer;
+    margin: 0 0 10px 0;
+}
+.loginbutton:hover {
+    background-color: #f44336;
+    color: white;
+    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: 1s ease all;
+}

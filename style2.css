@@ -1,0 +1,69 @@
+body{
+    margin: 0px;
+    background-image: url(Assets/BrowseBg.jpg);
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.menuContainer{
+    display: inline-flex;
+    padding: 0;
+    box-shadow: rgb(129, 129, 129) 0 0 50px;
+    background-color: black;
+    position: sticky;
+    top: 0%;
+    width: 50%;
+    transform: translate(50%,50%);
+    text-align: center;
+}
+.searchBar{
+    width: fit-content;
+    margin: auto;
+    padding: 10px 10px;
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+}
+.menuContainer a{
+    width: 14.28514%;
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+    padding-top: 10px;
+}
+.menuContainer a:hover{
+    background-color: white;
+    color:black;
+    transition-timing-function: ease-in;
+}
+
+*{
+    margin-left: 0;
+    margin-right: 0;
+}
+.gen h1{
+    text-align: center;
+    border-radius:10px;
+    border-style:groove;
+    background-color: rgba(255, 255, 244, 0.658);
+    width: fit-content;
+    margin-left: 45%;
+}
+.act{
+    padding: 1% 0% 1% 6%;
+}
+.act img{
+    width: 20%;
+    margin:0 2% 0 2% ;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px black;
+}
+.act h2{
+    border-style: groove;
+    width:fit-content;
+    border-radius: 5px;
+    background-color: black;
+    color:aliceblue;
+}
+.act img:hover{
+    box-shadow: 0px 0px 100px black;
+    transition: 1000ms;
+}
